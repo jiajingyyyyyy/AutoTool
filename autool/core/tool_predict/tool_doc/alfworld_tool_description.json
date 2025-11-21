@@ -1,0 +1,177 @@
+{
+    "take": {
+        "tool": "take",
+        "tool_desc": "Pick up a specific object from a receptacle or location.",
+        "args": [
+            {
+                "arg_name": "obj",
+                "arg_type": "str",
+                "arg_desc": "The object you want to take"
+            },
+            {
+                "arg_name": "recep",
+                "arg_type": "str",
+                "arg_desc": "The receptacle or location where the object is currently located"
+            }
+        ]
+    },
+    "put": {
+        "tool": "put",
+        "tool_desc": "Place an object you're currently holding into or onto a receptacle.",
+        "args": [
+            {
+                "arg_name": "obj",
+                "arg_type": "str",
+                "arg_desc": "The object you want to put down (must be in your inventory)"
+            },
+            {
+                "arg_name": "recep",
+                "arg_type": "str",
+                "arg_desc": "The receptacle or location where you want to place the object"
+            }
+        ]
+    },
+    "open": {
+        "tool": "open",
+        "tool_desc": "Open a closed container or receptacle to access its contents.",
+        "args": [
+            {
+                "arg_name": "recep",
+                "arg_type": "str",
+                "arg_desc": "The container or receptacle you want to open"
+            }
+        ]
+    },
+    "close": {
+        "tool": "close",
+        "tool_desc": "Close an open container or receptacle.",
+        "args": [
+            {
+                "arg_name": "recep",
+                "arg_type": "str",
+                "arg_desc": "The container or receptacle you want to close"
+            }
+        ]
+    },
+    "toggle": {
+        "tool": "toggle",
+        "tool_desc": "Toggle the state of an object or device (turn on/off).",
+        "args": [
+            {
+                "arg_name": "target",
+                "arg_type": "str",
+                "arg_desc": "The object or receptacle whose state you want to toggle"
+            }
+        ]
+    },
+    "clean": {
+        "tool": "clean",
+        "tool_desc": "Clean an object using a specific cleaning tool or receptacle.",
+        "args": [
+            {
+                "arg_name": "obj",
+                "arg_type": "str",
+                "arg_desc": "The object you want to clean"
+            },
+            {
+                "arg_name": "recep",
+                "arg_type": "str",
+                "arg_desc": "The tool or receptacle you want to use for cleaning"
+            }
+        ]
+    },
+    "cool": {
+        "tool": "cool",
+        "tool_desc": "Cool an object using a cooling device or receptacle.",
+        "args": [
+            {
+                "arg_name": "obj",
+                "arg_type": "str",
+                "arg_desc": "The object you want to cool"
+            },
+            {
+                "arg_name": "recep",
+                "arg_type": "str",
+                "arg_desc": "The cooling device or receptacle to use"
+            }
+        ]
+    },
+    "heat": {
+        "tool": "heat",
+        "tool_desc": "Heat an object using a heating device or receptacle.",
+        "args": [
+            {
+                "arg_name": "obj",
+                "arg_type": "str",
+                "arg_desc": "The object you want to heat"
+            },
+            {
+                "arg_name": "recep",
+                "arg_type": "str",
+                "arg_desc": "The heating device or receptacle to use"
+            }
+        ]
+    },
+    "inventory": {
+        "tool": "inventory",
+        "tool_desc": "Check what objects you are currently carrying.",
+        "args": []
+    },
+    "examine": {
+        "tool": "examine",
+        "tool_desc": "Closely examine an object or receptacle to get more detailed information about it.",
+        "args": [
+            {
+                "arg_name": "target",
+                "arg_type": "str",
+                "arg_desc": "The object or receptacle you want to examine"
+            }
+        ]
+    },
+    "go": {
+        "tool": "go",
+        "tool_desc": "Move to a specific location or receptacle in the environment.",
+        "args": [
+            {
+                "arg_name": "recep",
+                "arg_type": "str",
+                "arg_desc": "The location or receptacle you want to go to",
+                "required": true
+            },
+            {
+                "arg_name": "through",
+                "arg_type": "str",
+                "arg_desc": "Optional intermediate location to pass through",
+                "required": false,
+                "default": ""
+            }
+        ]
+    },
+    "check": {
+        "tool": "check",
+        "tool_desc": "Check what actions are currently valid in your current state and location.",
+        "args": [
+            {
+                "arg_name": "valid_actions",
+                "arg_type": "str",
+                "arg_desc": "Should be set to 'valid actions' to check available actions"
+            }
+        ]
+    },
+    "look": {
+        "tool": "look",
+        "tool_desc": "Look around to observe your current surroundings and the objects in the environment.",
+        "args": []
+    },
+    "use": {
+        "tool": "use",
+        "tool_desc": "Use or interact with a specific object or device.",
+        "args": [
+            {
+                "arg_name": "target",
+                "arg_type": "str",
+                "arg_desc": "The object or receptacle you want to use"
+            }
+        ]
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "loadPaperNet": {
+        "tool": "loadPaperNet",
+        "tool_desc": "Load paper citation network to get citation relationships between papers.",
+        "args": []
+    },
+    "loadAuthorNet": {
+        "tool": "loadAuthorNet",
+        "tool_desc": "Load author collaboration network to get collaboration relationships between authors.",
+        "args": []
+    },
+    "neighbourCheck": {
+        "tool": "neighbourCheck",
+        "tool_desc": "Check the neighbors of a node in a graph.",
+        "args": [
+            {
+                "arg_name": "graph",
+                "arg_type": "str",
+                "arg_desc": "Type of graph to check, can be 'paper' or 'author'"
+            },
+            {
+                "arg_name": "node",
+                "arg_type": "str",
+                "arg_desc": "ID of the node to check neighbors"
+            }
+        ]
+    },
+    "authorNodeCheck": {
+        "tool": "authorNodeCheck",
+        "tool_desc": "Check detailed information about an author node in the author network.",
+        "args": [
+            {
+                "arg_name": "node",
+                "arg_type": "str",
+                "arg_desc": "ID of the author node to check"
+            }
+        ]
+    },
+    "paperNodeCheck": {
+        "tool": "paperNodeCheck",
+        "tool_desc": "Check detailed information about a paper node in the paper network.",
+        "args": [
+            {
+                "arg_name": "node",
+                "arg_type": "str",
+                "arg_desc": "ID of the paper node to check"
+            }
+        ]
+    },
+    "authorEdgeCheck": {
+        "tool": "authorEdgeCheck",
+        "tool_desc": "Check the relationship between two author nodes in the author network.",
+        "args": [
+            {
+                "arg_name": "node1",
+                "arg_type": "str",
+                "arg_desc": "ID of the first author node"
+            },
+            {
+                "arg_name": "node2",
+                "arg_type": "str",
+                "arg_desc": "ID of the second author node"
+            }
+        ]
+    },
+    "paperEdgeCheck": {
+        "tool": "paperEdgeCheck",
+        "tool_desc": "Check the relationship between two paper nodes in the paper network.",
+        "args": [
+            {
+                "arg_name": "node1",
+                "arg_type": "str",
+                "arg_desc": "ID of the first paper node"
+            },
+            {
+                "arg_name": "node2",
+                "arg_type": "str",
+                "arg_desc": "ID of the second paper node"
+            }
+        ]
+    }
+}

@@ -1,0 +1,251 @@
+{
+    "open": {
+        "tool": "open",
+        "tool_desc": "Open a container or a door.",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The object (e.g., container, door) to open."
+            }
+        ]
+    },
+    "close": {
+        "tool": "close",
+        "tool_desc": "Close a container or a door.",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The object (e.g., container, door) to close."
+            }
+        ]
+    },
+    "pick_up": {
+        "tool": "pick_up",
+        "tool_desc": "Add an object to your inventory.",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The object to pick up."
+            }
+        ]
+    },
+    "put_down": {
+        "tool": "put_down",
+        "tool_desc": "Remove an object from your inventory and place it in the current location.",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The object from inventory to put down."
+            }
+        ]
+    },
+    "move": {
+        "tool": "move",
+        "tool_desc": "Transfer an object to a new location or container.",
+        "args": [
+            {
+                "arg_name": "OBJ_to_move",
+                "arg_type": "str",
+                "arg_desc": "The object to be moved."
+            },
+            {
+                "arg_name": "OBJ_destination",
+                "arg_type": "str",
+                "arg_desc": "The target container or location to move the object to."
+            }
+        ]
+    },
+    "pour": {
+        "tool": "pour",
+        "tool_desc": "Pour a substance from one container to another.",
+        "args": [
+            {
+                "arg_name": "OBJ_source_container",
+                "arg_type": "str",
+                "arg_desc": "The container holding the substance to be poured."
+            },
+            {
+                "arg_name": "OBJ_target_container",
+                "arg_type": "str",
+                "arg_desc": "The container into which the substance will be poured."
+            }
+        ]
+    },
+    "dunk": {
+        "tool": "dunk",
+        "tool_desc": "Immerse an object or container in a liquid (usually in another container).",
+        "args": [
+            {
+                "arg_name": "OBJ_to_dunk",
+                "arg_type": "str",
+                "arg_desc": "The object or container to be dunked."
+            },
+            {
+                "arg_name": "OBJ_liquid_container",
+                "arg_type": "str",
+                "arg_desc": "The container holding the liquid to dunk into."
+            }
+        ]
+    },
+    "mix": {
+        "tool": "mix",
+        "tool_desc": "Chemically combine contents of a specified container or substance.",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The container or substance whose contents are to be mixed."
+            }
+        ]
+    },
+    "look_around": {
+        "tool": "look_around",
+        "tool_desc": "Survey your current surroundings, listing objects and exits.",
+        "args": []
+    },
+    "look_at": {
+        "tool": "look_at",
+        "tool_desc": "Examine an object closely to get more details about it.",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The object to examine."
+            }
+        ]
+    },
+    "look_in": {
+        "tool": "look_in",
+        "tool_desc": "Peek inside a container to see its contents.",
+        "args": [
+            {
+                "arg_name": "OBJ_container",
+                "arg_type": "str",
+                "arg_desc": "The container object to look inside."
+            }
+        ]
+    },
+    "read": {
+        "tool": "read",
+        "tool_desc": "Review written content on an object (e.g., a book, a sign).",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The object that has readable content."
+            }
+        ]
+    },
+    "activate": {
+        "tool": "activate",
+        "tool_desc": "Toggle a device on (e.g., a stove, a sink).",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The device to activate."
+            }
+        ]
+    },
+    "deactivate": {
+        "tool": "deactivate",
+        "tool_desc": "Toggle a device off (e.g., a stove, a sink).",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The device to deactivate."
+            }
+        ]
+    },
+    "use": {
+        "tool": "use",
+        "tool_desc": "Utilize a device or item, optionally on another target object.",
+        "args": [
+            {
+                "arg_name": "OBJ_tool",
+                "arg_type": "str",
+                "arg_desc": "The tool or item to use."
+            },
+            {
+                "arg_name": "OBJ_target",
+                "arg_type": "str",
+                "arg_desc": "Optional. The target object to use the tool/item on."
+            }
+        ]
+    },
+    "examine": {
+        "tool": "examine",
+        "tool_desc": "examine something.",
+        "args": [
+            {
+                "arg_name": "OBJ_tool",
+                "arg_type": "str",
+                "arg_desc": "The item to examine."
+            }
+        ]
+    },
+    "go_to": {
+        "tool": "go_to",
+        "tool_desc": "Relocate to a new location within the environment.",
+        "args": [
+            {
+                "arg_name": "LOC",
+                "arg_type": "str",
+                "arg_desc": "The name of the location to move to."
+            }
+        ]
+    },
+    "eat": {
+        "tool": "eat",
+        "tool_desc": "Consume an edible item.",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The edible object to eat."
+            }
+        ]
+    },
+    "flush": {
+        "tool": "flush",
+        "tool_desc": "Activate a flushing mechanism (e.g., a toilet).",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The object with a flushing mechanism."
+            }
+        ]
+    },
+    "focus_on": {
+        "tool": "focus_on",
+        "tool_desc": "Direct attention to a particular object. This is usually for completing a task goal and indicates task completion if the object is correct.",
+        "args": [
+            {
+                "arg_name": "OBJ",
+                "arg_type": "str",
+                "arg_desc": "The object to focus on to complete a task objective."
+            }
+        ]
+    },
+    "wait": {
+        "tool": "wait",
+        "tool_desc": "wait for 10 iterations.",
+        "args": []
+    },
+    "task": {
+        "tool": "task",
+        "tool_desc": "Recap your current objective or task description.",
+        "args": []
+    },
+    "inventory": {
+        "tool": "inventory",
+        "tool_desc": "Display items currently carried in your inventory.",
+        "args": []
+    }
+}

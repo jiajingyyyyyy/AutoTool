@@ -1,0 +1,371 @@
+{
+  "start_time": 1763571410.8774998,
+  "processed_time": "2025-11-20 00:58:16",
+  "total_sequences": 1,
+  "total_tool_calls": 13,
+  "total_inertial_calling": 0,
+  "sequences": [
+    {
+      "trajectory_id": 0,
+      "metadata": {
+        "goal": "look at bowl under the desklamp.",
+        "start_time": "20251120_005652.145778",
+        "end_time": "20251120_005816.252916",
+        "total_time_seconds": 84.107,
+        "status": "Completed",
+        "total_llm_calls": 12,
+        "total_input_token": 22883,
+        "total_output_token": 1865
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.",
+          "timestamp": "20251120_005652.145778"
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 0,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 1",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "desk 1"
+              }
+            },
+            "llm_time_cost": 6.339881420135498
+          },
+          "observation": {
+            "raw_content": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "desk 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 788,
+            "output_tokens": 147
+          },
+          "round_time_cost": 6.340775012969971
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 1,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "toggle desklamp 1",
+            "parsed_content": {
+              "tool_name": "toggle",
+              "inputs": {
+                "target": "desklamp 1"
+              }
+            },
+            "llm_time_cost": 3.3804173469543457
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 994,
+            "output_tokens": 94
+          },
+          "round_time_cost": 3.380819320678711
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 2,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine desk 1",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "desk 1"
+              }
+            },
+            "llm_time_cost": 7.566347122192383
+          },
+          "observation": {
+            "raw_content": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "status": "success",
+              "examined_content": [
+                "mug 2",
+                "pen 2",
+                "keychain 3",
+                "desklamp 1",
+                "desk 1",
+                "pen 1",
+                "pencil 2"
+              ]
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1108,
+            "output_tokens": 145
+          },
+          "round_time_cost": 7.566791534423828
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 3,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "take desklamp 1 from desk 1",
+            "parsed_content": {
+              "tool_name": "take",
+              "inputs": {
+                "obj": "desklamp 1",
+                "recep": "desk 1"
+              }
+            },
+            "llm_time_cost": 7.627688407897949
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1312,
+            "output_tokens": 166
+          },
+          "round_time_cost": 7.628268003463745
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 4,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine desklamp 1",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "desklamp 1"
+              }
+            },
+            "llm_time_cost": 7.299999713897705
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1498,
+            "output_tokens": 235
+          },
+          "round_time_cost": 7.300685405731201
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 5,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "check valid actions",
+            "parsed_content": {
+              "tool_name": "check",
+              "inputs": {}
+            },
+            "llm_time_cost": 10.937570810317993
+          },
+          "observation": {
+            "raw_content": "Choose an action from these valid actions: examine desk 1, go to bed 1, go to desk 2, go to drawer 1, go to drawer 2, go to drawer 3, go to drawer 4, go to drawer 5, go to drawer 6, go to garbagecan 1, go to laundryhamper 1, go to safe 1, go to shelf 1, go to shelf 2, go to shelf 3, go to shelf 4, go to shelf 5, go to shelf 6, inventory, look, take keychain 3 from desk 1, take mug 2 from desk 1, take pen 1 from desk 1, take pen 2 from desk 1, take pencil 2 from desk 1, use desklamp 1, check valid actions",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1753,
+            "output_tokens": 202
+          },
+          "round_time_cost": 10.938102960586548
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 6,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "use desklamp 1",
+            "parsed_content": {
+              "tool_name": "use",
+              "inputs": {
+                "target": "desklamp 1"
+              }
+            },
+            "llm_time_cost": 5.0560548305511475
+          },
+          "observation": {
+            "raw_content": "You turn on the desklamp 1.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2151,
+            "output_tokens": 125
+          },
+          "round_time_cost": 5.056951284408569
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 7,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "use desklamp 1",
+            "parsed_content": {
+              "tool_name": "use",
+              "inputs": {
+                "target": "desklamp 1"
+              }
+            },
+            "llm_time_cost": 7.730912923812866
+          },
+          "observation": {
+            "raw_content": "You turn on the desklamp 1.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2302,
+            "output_tokens": 88
+          },
+          "round_time_cost": 7.731435775756836
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 8,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 2",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "desk 2"
+              }
+            },
+            "llm_time_cost": 8.546033382415771
+          },
+          "observation": {
+            "raw_content": "On the desk 2, you see a alarmclock 1, a bowl 1, and a cd 3.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "desk 2"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2416,
+            "output_tokens": 212
+          },
+          "round_time_cost": 8.546681642532349
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 9,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine bowl 1",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "bowl 1"
+              }
+            },
+            "llm_time_cost": 6.970592737197876
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2670,
+            "output_tokens": 145
+          },
+          "round_time_cost": 6.971139907836914
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 10,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "take bowl 1 from desk 2",
+            "parsed_content": {
+              "tool_name": "take",
+              "inputs": {
+                "obj": "bowl 1",
+                "recep": "desk 2"
+              }
+            },
+            "llm_time_cost": 6.790811538696289
+          },
+          "observation": {
+            "raw_content": "You pick up the bowl 1 from the desk 2.",
+            "parsed_content": {
+              "status": "success",
+              "taken_object": "bowl 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2835,
+            "output_tokens": 192
+          },
+          "round_time_cost": 6.791294574737549
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 11,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 1",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "desk 1"
+              }
+            },
+            "llm_time_cost": 4.681433439254761
+          },
+          "observation": {
+            "raw_content": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "desk 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3056,
+            "output_tokens": 114
+          },
+          "round_time_cost": 4.681949138641357
+        }
+      ],
+      "summary": "Trajectory finished."
+    }
+  ],
+  "overhead": {
+    "total_graph_search_time": 0.0,
+    "total_SimSCE_time": 0.0,
+    "total_intuition_embedding_time": 0.0,
+    "total_path_embedding_time": 0.0,
+    "total_similarity_cost_time": 0.0,
+    "total_graph_construction": 0.0,
+    "total_inertial_sense_overhead": 6.0558319091796875e-05,
+    "total_parser_time": 0.0012061595916748047,
+    "total_updating_time": 0.0009279251098632812,
+    "total_param_filling_time": 0.0,
+    "total_generate_action_action_time": 0.0,
+    "total_llm_time": 82.92774367332458
+  },
+  "inertial_step": []
+}

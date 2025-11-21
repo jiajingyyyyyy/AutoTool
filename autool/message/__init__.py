@@ -1,0 +1,1 @@
+from autool.message.message import Message,Role

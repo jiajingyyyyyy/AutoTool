@@ -1,0 +1,13 @@
+{
+  "('use', 'target', 'output')": {
+    "('use', 'target', 'input')": 1
+  },
+  "('go', 'current_location', 'output')": {
+    "('go', 'recep', 'input')": 2,
+    "('take', 'recep', 'input')": 2
+  },
+  "('go', 'recep', 'output')": {
+    "('go', 'recep', 'input')": 2,
+    "('take', 'recep', 'input')": 2
+  }
+}

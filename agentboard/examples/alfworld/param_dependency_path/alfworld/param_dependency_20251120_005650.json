@@ -1,0 +1,16 @@
+{
+  "('go', 'current_location', 'output')": {
+    "('examine', 'target', 'input')": 1,
+    "('take', 'recep', 'input')": 1
+  },
+  "('go', 'recep', 'output')": {
+    "('examine', 'target', 'input')": 1,
+    "('take', 'recep', 'input')": 1
+  },
+  "('examine', 'examined_content', 'output')": {
+    "('use', 'target', 'input')": 2
+  },
+  "('use', 'target', 'output')": {
+    "('use', 'target', 'input')": 1
+  }
+}

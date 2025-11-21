@@ -1,0 +1,39 @@
+{
+  "('go', 'recep', 'output')": {
+    "('go', 'recep', 'input')": 3,
+    "('take', 'recep', 'input')": 2
+  },
+  "('open', 'recep', 'output')": {
+    "('cool', 'recep', 'input')": 1,
+    "('put', 'recep', 'input')": 1,
+    "('take', 'recep', 'input')": 1,
+    "('examine', 'target', 'input')": 1
+  },
+  "('cool', 'obj', 'output')": {
+    "('put', 'obj', 'input')": 1,
+    "('take', 'obj', 'input')": 2
+  },
+  "('cool', 'recep', 'output')": {
+    "('put', 'recep', 'input')": 1,
+    "('take', 'recep', 'input')": 2,
+    "('examine', 'target', 'input')": 1
+  },
+  "('put', 'obj', 'output')": {
+    "('take', 'obj', 'input')": 2
+  },
+  "('put', 'recep', 'output')": {
+    "('take', 'recep', 'input')": 2,
+    "('examine', 'target', 'input')": 1
+  },
+  "('take', 'recep', 'output')": {
+    "('examine', 'target', 'input')": 1,
+    "('take', 'recep', 'input')": 1
+  },
+  "('take', 'obj', 'output')": {
+    "('take', 'obj', 'input')": 1,
+    "('put', 'obj', 'input')": 1
+  },
+  "('examine', 'target', 'output')": {
+    "('take', 'recep', 'input')": 1
+  }
+}

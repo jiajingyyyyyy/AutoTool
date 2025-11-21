@@ -1,0 +1,12 @@
+{
+  "('examine', 'target', 'output')": {
+    "('examine', 'target', 'input')": 1,
+    "('use', 'target', 'input')": 1
+  },
+  "('open', 'recep', 'output')": {
+    "('examine', 'target', 'input')": 1
+  },
+  "('go', 'recep', 'output')": {
+    "('go', 'recep', 'input')": 1
+  }
+}

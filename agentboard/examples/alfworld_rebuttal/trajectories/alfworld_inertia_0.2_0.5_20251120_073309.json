@@ -1,0 +1,266 @@
+{
+  "start_time": 1763595189.8817663,
+  "processed_time": "2025-11-20 07:33:34",
+  "total_sequences": 11,
+  "total_tool_calls": 11,
+  "total_inertial_calling": 0,
+  "sequences": [
+    {
+      "trajectory_id": 0,
+      "metadata": {
+        "goal": "look at bowl under the desklamp.",
+        "start_time": "20251120_073311.024936",
+        "end_time": "20251120_073313.554697",
+        "total_time_seconds": 2.53,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.",
+          "timestamp": "20251120_073311.024936"
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 1,
+      "metadata": {
+        "goal": "put two soapbar in garbagecan.",
+        "start_time": "20251120_073313.556547",
+        "end_time": "20251120_073316.180719",
+        "total_time_seconds": 2.624,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a countertop 1, a garbagecan 1, a handtowelholder 2, a handtowelholder 1, a sinkbasin 2, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.",
+          "timestamp": "20251120_073313.556547"
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 2,
+      "metadata": {
+        "goal": "put a cool tomato in microwave.",
+        "start_time": "20251120_073316.181332",
+        "end_time": "20251120_073318.202609",
+        "total_time_seconds": 2.021,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.",
+          "timestamp": "20251120_073316.181332"
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 3,
+      "metadata": {
+        "goal": "put a clean plate in countertop.",
+        "start_time": "20251120_073318.203268",
+        "end_time": "20251120_073319.775009",
+        "total_time_seconds": 1.572,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.",
+          "timestamp": "20251120_073318.203268"
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 4,
+      "metadata": {
+        "goal": "put a clean soapbar in countertop.",
+        "start_time": "20251120_073319.775712",
+        "end_time": "20251120_073321.834546",
+        "total_time_seconds": 2.059,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a countertop 1, a garbagecan 1, a handtowelholder 2, a handtowelholder 1, a sinkbasin 2, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.",
+          "timestamp": "20251120_073319.775712"
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 5,
+      "metadata": {
+        "goal": "cool some lettuce and put it in countertop.",
+        "start_time": "20251120_073321.835334",
+        "end_time": "20251120_073324.291291",
+        "total_time_seconds": 2.456,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.",
+          "timestamp": "20251120_073321.835334"
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 6,
+      "metadata": {
+        "goal": "clean some pan and put it in countertop.",
+        "start_time": "20251120_073324.292144",
+        "end_time": "20251120_073326.839358",
+        "total_time_seconds": 2.547,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.",
+          "timestamp": "20251120_073324.292144"
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 7,
+      "metadata": {
+        "goal": "put a clean plate in countertop.",
+        "start_time": "20251120_073326.840177",
+        "end_time": "20251120_073328.834620",
+        "total_time_seconds": 1.994,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.",
+          "timestamp": "20251120_073326.840177"
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 8,
+      "metadata": {
+        "goal": "put a hot mug in coffeemachine.",
+        "start_time": "20251120_073328.835425",
+        "end_time": "20251120_073330.919393",
+        "total_time_seconds": 2.084,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.",
+          "timestamp": "20251120_073328.835425"
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 9,
+      "metadata": {
+        "goal": "put some saltshaker on drawer.",
+        "start_time": "20251120_073330.920401",
+        "end_time": "20251120_073333.031148",
+        "total_time_seconds": 2.111,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.",
+          "timestamp": "20251120_073330.920401"
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 10,
+      "metadata": {
+        "goal": "clean some bowl and put it in cabinet.",
+        "start_time": "20251120_073333.032186",
+        "end_time": "20251120_073334.577763",
+        "total_time_seconds": 1.546,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.",
+          "timestamp": "20251120_073333.032186"
+        }
+      ],
+      "summary": "Trajectory finished."
+    }
+  ],
+  "overhead": {
+    "total_graph_search_time": 0.0,
+    "total_SimSCE_time": 0.0,
+    "total_intuition_embedding_time": 0.0,
+    "total_path_embedding_time": 0.0,
+    "total_similarity_cost_time": 0.0,
+    "total_graph_construction": 0.002488374710083008,
+    "total_inertial_sense_overhead": 0.0,
+    "total_parser_time": 0.0,
+    "total_updating_time": 0.0,
+    "total_param_filling_time": 0.0,
+    "total_generate_action_action_time": 0.0,
+    "total_llm_time": 0.0
+  },
+  "inertial_step": []
+}

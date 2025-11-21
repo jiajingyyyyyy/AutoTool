@@ -1,0 +1,46 @@
+{
+  "start_time": 1763595246.4277568,
+  "processed_time": "2025-11-20 07:34:09",
+  "total_sequences": 1,
+  "total_tool_calls": 1,
+  "total_inertial_calling": 0,
+  "sequences": [
+    {
+      "trajectory_id": 0,
+      "metadata": {
+        "goal": "look at bowl under the desklamp.",
+        "start_time": "20251120_073407.565674",
+        "end_time": "20251120_073409.180642",
+        "total_time_seconds": 1.615,
+        "status": "Completed",
+        "total_llm_calls": 0,
+        "total_input_token": 0,
+        "total_output_token": 0
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.",
+          "timestamp": "20251120_073407.565674"
+        }
+      ],
+      "summary": "Trajectory finished."
+    }
+  ],
+  "overhead": {
+    "total_graph_search_time": 0.0,
+    "total_SimSCE_time": 0.0,
+    "total_intuition_embedding_time": 0.0,
+    "total_path_embedding_time": 0.0,
+    "total_similarity_cost_time": 0.0,
+    "total_graph_construction": 0.0,
+    "total_inertial_sense_overhead": 0.0,
+    "total_parser_time": 0.0,
+    "total_updating_time": 0.0,
+    "total_param_filling_time": 0.0,
+    "total_generate_action_action_time": 0.0,
+    "total_llm_time": 0.0
+  },
+  "inertial_step": []
+}

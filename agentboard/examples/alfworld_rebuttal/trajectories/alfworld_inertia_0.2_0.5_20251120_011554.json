@@ -1,0 +1,1087 @@
+{
+  "start_time": 1763572554.5490406,
+  "processed_time": "2025-11-20 01:18:25",
+  "total_sequences": 2,
+  "total_tool_calls": 40,
+  "total_inertial_calling": 0,
+  "sequences": [
+    {
+      "trajectory_id": 0,
+      "metadata": {
+        "goal": "look at bowl under the desklamp.",
+        "start_time": "20251120_011555.701354",
+        "end_time": "20251120_011713.258528",
+        "total_time_seconds": 77.557,
+        "status": "Completed",
+        "total_llm_calls": 15,
+        "total_input_token": 30430,
+        "total_output_token": 2034
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.",
+          "timestamp": "20251120_011555.701354"
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 0,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 1",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "desk 1"
+              }
+            },
+            "llm_time_cost": 4.551485061645508
+          },
+          "observation": {
+            "raw_content": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "desk 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 788,
+            "output_tokens": 121
+          },
+          "round_time_cost": 4.552253484725952
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 1,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine desklamp 1",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "desklamp 1"
+              }
+            },
+            "llm_time_cost": 5.134997844696045
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 968,
+            "output_tokens": 102
+          },
+          "round_time_cost": 5.135401487350464
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 2,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "toggle desklamp 1",
+            "parsed_content": {
+              "tool_name": "toggle",
+              "inputs": {
+                "target": "desklamp 1"
+              }
+            },
+            "llm_time_cost": 2.751478672027588
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1090,
+            "output_tokens": 80
+          },
+          "round_time_cost": 2.7519330978393555
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 3,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine desk 1",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "desk 1"
+              }
+            },
+            "llm_time_cost": 5.427089691162109
+          },
+          "observation": {
+            "raw_content": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "status": "success",
+              "examined_content": [
+                "pencil 2",
+                "pen 1",
+                "mug 2",
+                "desk 1",
+                "desklamp 1",
+                "pen 2",
+                "keychain 3"
+              ]
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1190,
+            "output_tokens": 136
+          },
+          "round_time_cost": 5.427547454833984
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 4,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "take desklamp 1 from desk 1",
+            "parsed_content": {
+              "tool_name": "take",
+              "inputs": {
+                "obj": "desklamp 1",
+                "recep": "desk 1"
+              }
+            },
+            "llm_time_cost": 4.423262357711792
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1385,
+            "output_tokens": 120
+          },
+          "round_time_cost": 4.424383878707886
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 5,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "check valid actions",
+            "parsed_content": {
+              "tool_name": "check",
+              "inputs": {}
+            },
+            "llm_time_cost": 3.6034674644470215
+          },
+          "observation": {
+            "raw_content": "Choose an action from these valid actions: examine desk 1, go to bed 1, go to desk 2, go to drawer 1, go to drawer 2, go to drawer 3, go to drawer 4, go to drawer 5, go to drawer 6, go to garbagecan 1, go to laundryhamper 1, go to safe 1, go to shelf 1, go to shelf 2, go to shelf 3, go to shelf 4, go to shelf 5, go to shelf 6, inventory, look, take keychain 3 from desk 1, take mug 2 from desk 1, take pen 1 from desk 1, take pen 2 from desk 1, take pencil 2 from desk 1, use desklamp 1, check valid actions",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1525,
+            "output_tokens": 134
+          },
+          "round_time_cost": 3.6039414405822754
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 6,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "use desklamp 1",
+            "parsed_content": {
+              "tool_name": "use",
+              "inputs": {
+                "target": "desklamp 1"
+              }
+            },
+            "llm_time_cost": 3.5367183685302734
+          },
+          "observation": {
+            "raw_content": "You turn on the desklamp 1.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1855,
+            "output_tokens": 95
+          },
+          "round_time_cost": 3.5376992225646973
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 7,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine desk 1",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "desk 1"
+              }
+            },
+            "llm_time_cost": 2.6785454750061035
+          },
+          "observation": {
+            "raw_content": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "status": "success",
+              "examined_content": [
+                "pencil 2",
+                "pen 1",
+                "mug 2",
+                "desk 1",
+                "desklamp 1",
+                "pen 2",
+                "keychain 3"
+              ]
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1976,
+            "output_tokens": 67
+          },
+          "round_time_cost": 2.6792681217193604
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 8,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 2",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "desk 2"
+              }
+            },
+            "llm_time_cost": 3.3843300342559814
+          },
+          "observation": {
+            "raw_content": "On the desk 2, you see a alarmclock 1, a bowl 1, and a cd 3.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "desk 2"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2102,
+            "output_tokens": 98
+          },
+          "round_time_cost": 3.385070323944092
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 9,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine bowl 1",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "bowl 1"
+              }
+            },
+            "llm_time_cost": 12.589658498764038
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2242,
+            "output_tokens": 365
+          },
+          "round_time_cost": 12.590405702590942
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 10,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 1",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "desk 1"
+              }
+            },
+            "llm_time_cost": 5.657531976699829
+          },
+          "observation": {
+            "raw_content": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "desk 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2627,
+            "output_tokens": 197
+          },
+          "round_time_cost": 5.65807032585144
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 11,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 2",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "desk 2"
+              }
+            },
+            "llm_time_cost": 9.431865692138672
+          },
+          "observation": {
+            "raw_content": "On the desk 2, you see a alarmclock 1, a bowl 1, and a cd 3.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "desk 2"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2883,
+            "output_tokens": 202
+          },
+          "round_time_cost": 9.432554483413696
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 12,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine bowl 1",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "bowl 1"
+              }
+            },
+            "llm_time_cost": 5.431952953338623
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3127,
+            "output_tokens": 112
+          },
+          "round_time_cost": 5.432477951049805
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 13,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "take bowl 1 from desk 2",
+            "parsed_content": {
+              "tool_name": "take",
+              "inputs": {
+                "obj": "bowl 1",
+                "recep": "desk 2"
+              }
+            },
+            "llm_time_cost": 4.202129602432251
+          },
+          "observation": {
+            "raw_content": "You pick up the bowl 1 from the desk 2.",
+            "parsed_content": {
+              "status": "success",
+              "taken_object": "bowl 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3259,
+            "output_tokens": 125
+          },
+          "round_time_cost": 4.202765941619873
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 14,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 1",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "desk 1"
+              }
+            },
+            "llm_time_cost": 3.311288833618164
+          },
+          "observation": {
+            "raw_content": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "desk 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3413,
+            "output_tokens": 80
+          },
+          "round_time_cost": 3.311950922012329
+        }
+      ],
+      "summary": "Trajectory finished."
+    },
+    {
+      "trajectory_id": 1,
+      "metadata": {
+        "goal": "put two soapbar in garbagecan.",
+        "start_time": "20251120_011713.261973",
+        "end_time": "20251120_011825.524619",
+        "total_time_seconds": 72.263,
+        "status": "Completed",
+        "total_llm_calls": 23,
+        "total_input_token": 44622,
+        "total_output_token": 1462
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a countertop 1, a garbagecan 1, a handtowelholder 2, a handtowelholder 1, a sinkbasin 2, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.",
+          "timestamp": "20251120_011713.261973"
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 0,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open cabinet 1",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "recep": "cabinet 1"
+              }
+            },
+            "llm_time_cost": 3.940322160720825
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 775,
+            "output_tokens": 84
+          },
+          "round_time_cost": 3.9408912658691406
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 1,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open cabinet 2",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "recep": "cabinet 2"
+              }
+            },
+            "llm_time_cost": 2.0785396099090576
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 879,
+            "output_tokens": 47
+          },
+          "round_time_cost": 2.079277515411377
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 2,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "look",
+            "parsed_content": {
+              "tool_name": "look",
+              "inputs": {}
+            },
+            "llm_time_cost": 2.6029481887817383
+          },
+          "observation": {
+            "raw_content": "You are in the middle of a room. Looking quickly around you, you see a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a countertop 1, a garbagecan 1, a handtowelholder 2, a handtowelholder 1, a sinkbasin 2, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 946,
+            "output_tokens": 78
+          },
+          "round_time_cost": 2.6034228801727295
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 3,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open cabinet 3",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "recep": "cabinet 3"
+              }
+            },
+            "llm_time_cost": 3.3637807369232178
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1139,
+            "output_tokens": 60
+          },
+          "round_time_cost": 3.364359140396118
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 4,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine cabinet 1",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "cabinet 1"
+              }
+            },
+            "llm_time_cost": 3.7286834716796875
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1219,
+            "output_tokens": 97
+          },
+          "round_time_cost": 3.7292919158935547
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 5,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "check valid actions",
+            "parsed_content": {
+              "tool_name": "check",
+              "inputs": {}
+            },
+            "llm_time_cost": 3.6084814071655273
+          },
+          "observation": {
+            "raw_content": "Choose an action from these valid actions: go to cabinet 1, go to cabinet 2, go to cabinet 3, go to cabinet 4, go to countertop 1, go to garbagecan 1, go to handtowelholder 1, go to handtowelholder 2, go to sinkbasin 1, go to sinkbasin 2, go to toilet 1, go to toiletpaperhanger 1, go to towelholder 1, inventory, look, check valid actions",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1336,
+            "output_tokens": 66
+          },
+          "round_time_cost": 3.608992338180542
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 6,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to cabinet 1",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "cabinet 1"
+              }
+            },
+            "llm_time_cost": 3.0190086364746094
+          },
+          "observation": {
+            "raw_content": "The cabinet 1 is closed.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1530,
+            "output_tokens": 75
+          },
+          "round_time_cost": 3.020028829574585
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 7,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open cabinet 1",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "recep": "cabinet 1"
+              }
+            },
+            "llm_time_cost": 1.7432687282562256
+          },
+          "observation": {
+            "raw_content": "You open the cabinet 1. The cabinet 1 is open. In it, you see a cloth 1, and a soapbottle 1.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1628,
+            "output_tokens": 43
+          },
+          "round_time_cost": 1.7438380718231201
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 8,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to cabinet 2",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "cabinet 2"
+              }
+            },
+            "llm_time_cost": 2.4117178916931152
+          },
+          "observation": {
+            "raw_content": "The cabinet 2 is closed.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1719,
+            "output_tokens": 58
+          },
+          "round_time_cost": 2.412294626235962
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 9,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open cabinet 2",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "recep": "cabinet 2"
+              }
+            },
+            "llm_time_cost": 1.9045305252075195
+          },
+          "observation": {
+            "raw_content": "You open the cabinet 2. The cabinet 2 is open. In it, you see a candle 2, and a toiletpaper 1.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1800,
+            "output_tokens": 29
+          },
+          "round_time_cost": 1.9051098823547363
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 10,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to cabinet 3",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "cabinet 3"
+              }
+            },
+            "llm_time_cost": 2.1440160274505615
+          },
+          "observation": {
+            "raw_content": "The cabinet 3 is closed.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1877,
+            "output_tokens": 48
+          },
+          "round_time_cost": 2.1445696353912354
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 11,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open cabinet 3",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "recep": "cabinet 3"
+              }
+            },
+            "llm_time_cost": 1.8011720180511475
+          },
+          "observation": {
+            "raw_content": "You open the cabinet 3. The cabinet 3 is open. In it, you see a cloth 2.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1948,
+            "output_tokens": 27
+          },
+          "round_time_cost": 1.8017160892486572
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 12,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to cabinet 4",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "cabinet 4"
+              }
+            },
+            "llm_time_cost": 1.8968737125396729
+          },
+          "observation": {
+            "raw_content": "The cabinet 4 is closed.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2015,
+            "output_tokens": 47
+          },
+          "round_time_cost": 1.8975293636322021
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 13,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open cabinet 4",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "recep": "cabinet 4"
+              }
+            },
+            "llm_time_cost": 1.641296148300171
+          },
+          "observation": {
+            "raw_content": "You open the cabinet 4. The cabinet 4 is open. In it, you see a soapbar 2.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2085,
+            "output_tokens": 29
+          },
+          "round_time_cost": 1.6418795585632324
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 14,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to countertop 1",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "countertop 1"
+              }
+            },
+            "llm_time_cost": 3.905755043029785
+          },
+          "observation": {
+            "raw_content": "On the countertop 1, you see a candle 1, a soapbar 4, a soapbar 3, a soapbar 1, and a spraybottle 1.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "countertop 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2155,
+            "output_tokens": 91
+          },
+          "round_time_cost": 3.906364679336548
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 15,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "take soapbar 1 from countertop 1",
+            "parsed_content": {
+              "tool_name": "take",
+              "inputs": {
+                "obj": "soapbar 1",
+                "recep": "countertop 1"
+              }
+            },
+            "llm_time_cost": 3.0560760498046875
+          },
+          "observation": {
+            "raw_content": "You pick up the soapbar 1 from the countertop 1.",
+            "parsed_content": {
+              "status": "success",
+              "taken_object": "soapbar 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2303,
+            "output_tokens": 110
+          },
+          "round_time_cost": 3.056687831878662
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 16,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "take soapbar 3 from countertop 1",
+            "parsed_content": {
+              "tool_name": "take",
+              "inputs": {
+                "obj": "soapbar 3",
+                "recep": "countertop 1"
+              }
+            },
+            "llm_time_cost": 2.611646890640259
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "status": "failure"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2444,
+            "output_tokens": 55
+          },
+          "round_time_cost": 2.6122024059295654
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 17,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to garbagecan 1",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "garbagecan 1"
+              }
+            },
+            "llm_time_cost": 3.623899221420288
+          },
+          "observation": {
+            "raw_content": "On the garbagecan 1, you see nothing.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "garbagecan 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2519,
+            "output_tokens": 106
+          },
+          "round_time_cost": 3.624366283416748
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 18,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "put soapbar 1 in/on garbagecan 1",
+            "parsed_content": {
+              "tool_name": "put",
+              "inputs": {
+                "obj": "soapbar 1",
+                "recep": "garbagecan 1"
+              }
+            },
+            "llm_time_cost": 2.243523359298706
+          },
+          "observation": {
+            "raw_content": "You put the soapbar 1 in/on the garbagecan 1.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2653,
+            "output_tokens": 78
+          },
+          "round_time_cost": 2.244140863418579
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 19,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to countertop 1",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "countertop 1"
+              }
+            },
+            "llm_time_cost": 4.387088775634766
+          },
+          "observation": {
+            "raw_content": "On the countertop 1, you see a candle 1, a soapbar 4, a soapbar 3, and a spraybottle 1.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "countertop 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2762,
+            "output_tokens": 69
+          },
+          "round_time_cost": 4.387667894363403
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 20,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "take soapbar 3 from countertop 1",
+            "parsed_content": {
+              "tool_name": "take",
+              "inputs": {
+                "obj": "soapbar 3",
+                "recep": "countertop 1"
+              }
+            },
+            "llm_time_cost": 2.974130868911743
+          },
+          "observation": {
+            "raw_content": "You pick up the soapbar 3 from the countertop 1.",
+            "parsed_content": {
+              "status": "success",
+              "taken_object": "soapbar 3"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2882,
+            "output_tokens": 47
+          },
+          "round_time_cost": 2.9747116565704346
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 21,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to garbagecan 1",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "garbagecan 1"
+              }
+            },
+            "llm_time_cost": 7.371572256088257
+          },
+          "observation": {
+            "raw_content": "On the garbagecan 1, you see a soapbar 1.",
+            "parsed_content": {
+              "status": "success",
+              "current_location": "garbagecan 1"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2960,
+            "output_tokens": 56
+          },
+          "round_time_cost": 7.372162580490112
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 22,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "put soapbar 3 in/on garbagecan 1",
+            "parsed_content": {
+              "tool_name": "put",
+              "inputs": {
+                "obj": "soapbar 3",
+                "recep": "garbagecan 1"
+              }
+            },
+            "llm_time_cost": 3.47175931930542
+          },
+          "observation": {
+            "raw_content": "You put the soapbar 3 in/on the garbagecan 1.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3048,
+            "output_tokens": 62
+          },
+          "round_time_cost": 3.4723966121673584
+        }
+      ],
+      "summary": "Trajectory finished."
+    }
+  ],
+  "overhead": {
+    "total_graph_search_time": 0.0,
+    "total_SimSCE_time": 0.0,
+    "total_intuition_embedding_time": 0.0,
+    "total_path_embedding_time": 0.0,
+    "total_similarity_cost_time": 0.0,
+    "total_graph_construction": 0.0009875297546386719,
+    "total_inertial_sense_overhead": 0.00011777877807617188,
+    "total_parser_time": 0.0038330554962158203,
+    "total_updating_time": 0.002846956253051758,
+    "total_param_filling_time": 0.0,
+    "total_generate_action_action_time": 0.0,
+    "total_llm_time": 145.645893573761
+  },
+  "inertial_step": []
+}

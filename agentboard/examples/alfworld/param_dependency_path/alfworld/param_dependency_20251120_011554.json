@@ -1,0 +1,38 @@
+{
+  "('go', 'current_location', 'output')": {
+    "('examine', 'target', 'input')": 2,
+    "('go', 'recep', 'input')": 4,
+    "('take', 'recep', 'input')": 4,
+    "('put', 'recep', 'input')": 2
+  },
+  "('go', 'recep', 'output')": {
+    "('examine', 'target', 'input')": 2,
+    "('go', 'recep', 'input')": 4,
+    "('take', 'recep', 'input')": 4,
+    "('open', 'recep', 'input')": 4,
+    "('put', 'recep', 'input')": 2
+  },
+  "('examine', 'examined_content', 'output')": {
+    "('use', 'target', 'input')": 1,
+    "('examine', 'target', 'input')": 1,
+    "('go', 'recep', 'input')": 1
+  },
+  "('examine', 'target', 'output')": {
+    "('examine', 'target', 'input')": 1,
+    "('go', 'recep', 'input')": 1
+  },
+  "('take', 'taken_object', 'output')": {
+    "('put', 'obj', 'input')": 2
+  },
+  "('take', 'obj', 'output')": {
+    "('put', 'obj', 'input')": 2
+  },
+  "('take', 'recep', 'output')": {
+    "('go', 'recep', 'input')": 1,
+    "('take', 'recep', 'input')": 1
+  },
+  "('put', 'recep', 'output')": {
+    "('go', 'recep', 'input')": 1,
+    "('put', 'recep', 'input')": 1
+  }
+}

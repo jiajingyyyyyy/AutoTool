@@ -1,0 +1,7 @@
+{
+  "('go_to', 'LOC', 'output')": {
+    "('open', 'OBJ', 'input')": 3,
+    "('go_to', 'LOC', 'input')": 2,
+    "('look_at', 'OBJ', 'input')": 1
+  }
+}

@@ -1,0 +1,869 @@
+{
+  "start_time": 1763568157.963797,
+  "processed_time": "2025-11-20 00:05:44",
+  "total_sequences": 1,
+  "total_tool_calls": 31,
+  "total_inertial_calling": 0,
+  "sequences": [
+    {
+      "trajectory_id": 0,
+      "metadata": {
+        "goal": "look at bowl under the desklamp.",
+        "start_time": "20251120_000239.121924",
+        "end_time": "20251120_000544.511821",
+        "total_time_seconds": 185.39,
+        "status": "Completed",
+        "total_llm_calls": 30,
+        "total_input_token": 177957,
+        "total_output_token": 2841
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.",
+          "timestamp": "20251120_000239.121924"
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 0,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 1",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "desk 1"
+              }
+            },
+            "llm_time_cost": 6.463119745254517
+          },
+          "observation": {
+            "raw_content": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "raw_observation": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4545,
+            "output_tokens": 65
+          },
+          "round_time_cost": 6.4635889530181885
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 1,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to shelf 1",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "shelf 1"
+              }
+            },
+            "llm_time_cost": 5.491876840591431
+          },
+          "observation": {
+            "raw_content": "On the shelf 1, you see a cellphone 3, and a creditcard 2.",
+            "parsed_content": {
+              "raw_observation": "On the shelf 1, you see a cellphone 3, and a creditcard 2.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4669,
+            "output_tokens": 57
+          },
+          "round_time_cost": 5.49213433265686
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 2,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to shelf 2",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "shelf 2"
+              }
+            },
+            "llm_time_cost": 2.5365424156188965
+          },
+          "observation": {
+            "raw_content": "On the shelf 2, you see a mug 1.",
+            "parsed_content": {
+              "raw_observation": "On the shelf 2, you see a mug 1.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4763,
+            "output_tokens": 41
+          },
+          "round_time_cost": 2.536806583404541
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 3,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to shelf 3",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "shelf 3"
+              }
+            },
+            "llm_time_cost": 2.7367377281188965
+          },
+          "observation": {
+            "raw_content": "On the shelf 3, you see a desklamp 1, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "raw_observation": "On the shelf 3, you see a desklamp 1, a pen 1, and a pencil 2.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4834,
+            "output_tokens": 37
+          },
+          "round_time_cost": 2.737074136734009
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 4,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to shelf 4",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "shelf 4"
+              }
+            },
+            "llm_time_cost": 2.4689643383026123
+          },
+          "observation": {
+            "raw_content": "On the shelf 4, you see a pencil 3.",
+            "parsed_content": {
+              "raw_observation": "On the shelf 4, you see a pencil 3.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4914,
+            "output_tokens": 37
+          },
+          "round_time_cost": 2.4692723751068115
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 5,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to shelf 5",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "shelf 5"
+              }
+            },
+            "llm_time_cost": 2.5739495754241943
+          },
+          "observation": {
+            "raw_content": "On the shelf 5, you see nothing.",
+            "parsed_content": {
+              "raw_observation": "On the shelf 5, you see nothing.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4981,
+            "output_tokens": 36
+          },
+          "round_time_cost": 2.574249267578125
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 6,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to shelf 6",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "shelf 6"
+              }
+            },
+            "llm_time_cost": 4.551213979721069
+          },
+          "observation": {
+            "raw_content": "On the shelf 6, you see nothing.",
+            "parsed_content": {
+              "raw_observation": "On the shelf 6, you see nothing.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5044,
+            "output_tokens": 27
+          },
+          "round_time_cost": 4.551508188247681
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 7,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to drawer 1",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "drawer 1"
+              }
+            },
+            "llm_time_cost": 3.5473389625549316
+          },
+          "observation": {
+            "raw_content": "The drawer 1 is closed.",
+            "parsed_content": {
+              "raw_observation": "The drawer 1 is closed.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5098,
+            "output_tokens": 45
+          },
+          "round_time_cost": 3.5477116107940674
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 8,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open drawer 1",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "OBJ": "drawer 1"
+              }
+            },
+            "llm_time_cost": 2.3150763511657715
+          },
+          "observation": {
+            "raw_content": "You open the drawer 1. The drawer 1 is open. In it, you see a creditcard 1.",
+            "parsed_content": {
+              "raw_observation": "You open the drawer 1. The drawer 1 is open. In it, you see a creditcard 1.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5166,
+            "output_tokens": 28
+          },
+          "round_time_cost": 2.315416097640991
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 9,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to drawer 2",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "drawer 2"
+              }
+            },
+            "llm_time_cost": 2.7421932220458984
+          },
+          "observation": {
+            "raw_content": "On the drawer 2, you see a pencil 1.",
+            "parsed_content": {
+              "raw_observation": "On the drawer 2, you see a pencil 1.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5235,
+            "output_tokens": 37
+          },
+          "round_time_cost": 2.7425098419189453
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 10,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to drawer 3",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "drawer 3"
+              }
+            },
+            "llm_time_cost": 4.745761871337891
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "raw_observation": "Nothing happens.",
+              "status": "failure",
+              "error_message": "Nothing happens."
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5302,
+            "output_tokens": 49
+          },
+          "round_time_cost": 4.746080636978149
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 11,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to drawer 4",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "drawer 4"
+              }
+            },
+            "llm_time_cost": 3.749262809753418
+          },
+          "observation": {
+            "raw_content": "The drawer 4 is closed.",
+            "parsed_content": {
+              "raw_observation": "The drawer 4 is closed.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5371,
+            "output_tokens": 59
+          },
+          "round_time_cost": 3.749662399291992
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 12,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open drawer 4",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "OBJ": "drawer 4"
+              }
+            },
+            "llm_time_cost": 3.8441054821014404
+          },
+          "observation": {
+            "raw_content": "You open the drawer 4. The drawer 4 is open. In it, you see a cd 2, and a pen 3.",
+            "parsed_content": {
+              "raw_observation": "You open the drawer 4. The drawer 4 is open. In it, you see a cd 2, and a pen 3.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5453,
+            "output_tokens": 26
+          },
+          "round_time_cost": 3.84442138671875
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 13,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to drawer 5",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "drawer 5"
+              }
+            },
+            "llm_time_cost": 2.665487051010132
+          },
+          "observation": {
+            "raw_content": "On the drawer 5, you see a book 2.",
+            "parsed_content": {
+              "raw_observation": "On the drawer 5, you see a book 2.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5525,
+            "output_tokens": 33
+          },
+          "round_time_cost": 2.6658191680908203
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 14,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to drawer 6",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "drawer 6"
+              }
+            },
+            "llm_time_cost": 2.324284076690674
+          },
+          "observation": {
+            "raw_content": "The drawer 6 is closed.",
+            "parsed_content": {
+              "raw_observation": "The drawer 6 is closed.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5588,
+            "output_tokens": 49
+          },
+          "round_time_cost": 2.324504852294922
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 15,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open drawer 6",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "OBJ": "drawer 6"
+              }
+            },
+            "llm_time_cost": 3.3712985515594482
+          },
+          "observation": {
+            "raw_content": "You open the drawer 6. The drawer 6 is open. In it, you see nothing.",
+            "parsed_content": {
+              "raw_observation": "You open the drawer 6. The drawer 6 is open. In it, you see nothing.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5660,
+            "output_tokens": 28
+          },
+          "round_time_cost": 3.3716533184051514
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 16,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 2",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "desk 2"
+              }
+            },
+            "llm_time_cost": 3.6413798332214355
+          },
+          "observation": {
+            "raw_content": "On the desk 2, you see a alarmclock 1, a bowl 1, and a cd 3.",
+            "parsed_content": {
+              "raw_observation": "On the desk 2, you see a alarmclock 1, a bowl 1, and a cd 3.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5725,
+            "output_tokens": 53
+          },
+          "round_time_cost": 3.6417431831359863
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 17,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "pick up bowl 1",
+            "parsed_content": {
+              "tool_name": "pick_up",
+              "inputs": {
+                "OBJ": "bowl 1"
+              }
+            },
+            "llm_time_cost": 9.992796182632446
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "raw_observation": "Nothing happens.",
+              "status": "failure",
+              "error_message": "Nothing happens."
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5820,
+            "output_tokens": 123
+          },
+          "round_time_cost": 9.9932222366333
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 18,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 1",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "desk 1"
+              }
+            },
+            "llm_time_cost": 5.529459476470947
+          },
+          "observation": {
+            "raw_content": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "raw_observation": "On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 5963,
+            "output_tokens": 92
+          },
+          "round_time_cost": 5.529891729354858
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 19,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "pick up desklamp 1",
+            "parsed_content": {
+              "tool_name": "pick_up",
+              "inputs": {
+                "OBJ": "desklamp 1"
+              }
+            },
+            "llm_time_cost": 3.0636768341064453
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "raw_observation": "Nothing happens.",
+              "status": "failure",
+              "error_message": "Nothing happens."
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 6114,
+            "output_tokens": 49
+          },
+          "round_time_cost": 3.064026117324829
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 20,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "move bowl 1 to desk 1",
+            "parsed_content": {
+              "tool_name": "move",
+              "inputs": {
+                "OBJ_source": "bowl 1",
+                "OBJ_target": "desk 1"
+              }
+            },
+            "llm_time_cost": 17.375301599502563
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "raw_observation": "Nothing happens.",
+              "status": "failure",
+              "error_message": "Nothing happens."
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 6183,
+            "output_tokens": 320
+          },
+          "round_time_cost": 17.375774383544922
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 21,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 1",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "desk 1"
+              }
+            },
+            "llm_time_cost": 5.828650712966919
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "raw_observation": "Nothing happens.",
+              "status": "failure",
+              "error_message": "Nothing happens."
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 6523,
+            "output_tokens": 115
+          },
+          "round_time_cost": 5.829049110412598
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 22,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "look around",
+            "parsed_content": {
+              "tool_name": "look_around",
+              "inputs": {}
+            },
+            "llm_time_cost": 4.913236141204834
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "raw_observation": "Nothing happens.",
+              "status": "success",
+              "description_type": "location_details",
+              "objects": [],
+              "doors": []
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 6658,
+            "output_tokens": 84
+          },
+          "round_time_cost": 4.9135637283325195
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 23,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to shelf 3",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "shelf 3"
+              }
+            },
+            "llm_time_cost": 9.087242603302002
+          },
+          "observation": {
+            "raw_content": "On the shelf 3, you see a desklamp 1, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "raw_observation": "On the shelf 3, you see a desklamp 1, a pen 1, and a pencil 2.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 6762,
+            "output_tokens": 269
+          },
+          "round_time_cost": 9.087706327438354
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 24,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to desk 2",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "desk 2"
+              }
+            },
+            "llm_time_cost": 26.159048318862915
+          },
+          "observation": {
+            "raw_content": "On the desk 2, you see a alarmclock 1, a bowl 1, and a cd 3.",
+            "parsed_content": {
+              "raw_observation": "On the desk 2, you see a alarmclock 1, a bowl 1, and a cd 3.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 7074,
+            "output_tokens": 414
+          },
+          "round_time_cost": 26.159583806991577
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 25,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "look at bowl 1",
+            "parsed_content": {
+              "tool_name": "look_at",
+              "inputs": {
+                "OBJ": "bowl 1"
+              }
+            },
+            "llm_time_cost": 6.0168373584747314
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "raw_observation": "Nothing happens.",
+              "status": "success",
+              "description_type": "object_details",
+              "object_description": "Nothing happens."
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 7530,
+            "output_tokens": 123
+          },
+          "round_time_cost": 6.017227649688721
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 26,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to shelf 3",
+            "parsed_content": {
+              "tool_name": "go_to",
+              "inputs": {
+                "LOC": "shelf 3"
+              }
+            },
+            "llm_time_cost": 6.38961935043335
+          },
+          "observation": {
+            "raw_content": "On the shelf 3, you see a desklamp 1, a pen 1, and a pencil 2.",
+            "parsed_content": {
+              "raw_observation": "On the shelf 3, you see a desklamp 1, a pen 1, and a pencil 2.",
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 7673,
+            "output_tokens": 83
+          },
+          "round_time_cost": 6.390710830688477
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 27,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "activate desklamp 1",
+            "parsed_content": {
+              "tool_name": "activate",
+              "inputs": {
+                "OBJ": "desklamp 1"
+              }
+            },
+            "llm_time_cost": 4.469011068344116
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "raw_observation": "Nothing happens.",
+              "status": "failure",
+              "error_message": "Nothing happens."
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 7799,
+            "output_tokens": 53
+          },
+          "round_time_cost": 4.469420909881592
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 28,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "look at desk 2",
+            "parsed_content": {
+              "tool_name": "look_at",
+              "inputs": {
+                "OBJ": "desk 2"
+              }
+            },
+            "llm_time_cost": 9.258426189422607
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "raw_observation": "Nothing happens.",
+              "status": "success",
+              "description_type": "object_details",
+              "object_description": "Nothing happens."
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 7872,
+            "output_tokens": 221
+          },
+          "round_time_cost": 9.258776426315308
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 29,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "focus on bowl 1",
+            "parsed_content": {
+              "tool_name": "focus_on",
+              "inputs": {
+                "OBJ": "bowl 1"
+              }
+            },
+            "llm_time_cost": 15.098645448684692
+          },
+          "observation": {
+            "raw_content": "Nothing happens.",
+            "parsed_content": {
+              "raw_observation": "Nothing happens.",
+              "status": "failure",
+              "error_message": "Nothing happens."
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 8113,
+            "output_tokens": 188
+          },
+          "round_time_cost": 15.099092960357666
+        }
+      ],
+      "summary": "Trajectory finished."
+    }
+  ],
+  "overhead": {
+    "total_graph_search_time": 0.0,
+    "total_SimSCE_time": 0.0,
+    "total_intuition_embedding_time": 0.0,
+    "total_path_embedding_time": 0.0,
+    "total_similarity_cost_time": 0.0,
+    "total_graph_construction": 0.0,
+    "total_inertial_sense_overhead": 3.62396240234375e-05,
+    "total_parser_time": 0.0032677650451660156,
+    "total_updating_time": 0.0007767677307128906,
+    "total_param_filling_time": 0.0,
+    "total_generate_action_action_time": 0.0,
+    "total_llm_time": 182.95054411888123
+  },
+  "inertial_step": []
+}

@@ -1,0 +1,813 @@
+{
+  "start_time": 1763695066.9058356,
+  "processed_time": "2025-11-21 11:19:44",
+  "total_sequences": 1,
+  "total_tool_calls": 31,
+  "total_inertial_calling": 0,
+  "sequences": [
+    {
+      "trajectory_id": 0,
+      "metadata": {
+        "goal": "Your task is to measure the temperature of unknown substance B, which is located around the living room. You should pick up a temperature and the unknown substance B for temperature measurement. If the unknown substance B temperature is above -50.0 degrees celsius, place it in the orange box. If the unknown substance B temperature is below -50.0 degrees celsius, place it in the yellow box. The boxes are located around the living room.",
+        "start_time": "20251121_111748.238836",
+        "end_time": "20251121_111944.162964",
+        "total_time_seconds": 115.924,
+        "status": "Completed",
+        "total_llm_calls": 30,
+        "total_input_token": 86153,
+        "total_output_token": 2662
+      },
+      "inertial_step": [],
+      "steps": [
+        {
+          "type": "initial",
+          "content": "This room is called the greenhouse. In it, you see: \n\tthe agent\n\ta substance called air\n\ta bee hive. The bee hive door is closed. \n\ta jug (containing nothing)\n\ta shovel\n\ta sink, which is turned off. In the sink is: nothing.\nYou also see:\n\tA door to the hallway (that is open)\n\tA door to the outside (that is open)\nIn your inventory, you see:\n\tan orange\n",
+          "timestamp": "20251121_111748.238836"
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 0,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to hallway",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "hallway"
+              }
+            },
+            "llm_time_cost": 3.120413064956665
+          },
+          "observation": {
+            "raw_content": "You move to the hallway.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 920,
+            "output_tokens": 89
+          },
+          "round_time_cost": 3.1211845874786377
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 1,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "look",
+            "parsed_content": {
+              "tool_name": "look",
+              "inputs": {}
+            },
+            "llm_time_cost": 1.917163372039795
+          },
+          "observation": {
+            "raw_content": "This room is called the hallway. In it, you see: \n\tthe agent\n\ta substance called air\n\ta painting\nYou also see:\n\tA door to the art studio (that is open)\n\tA door to the bedroom (that is open)\n\tA door to the greenhouse (that is open)\n\tA door to the kitchen (that is open)\n\tA door to the living room (that is open)\n\tA door to the workshop (that is open)",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1031,
+            "output_tokens": 47
+          },
+          "round_time_cost": 1.917705774307251
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 2,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to living room",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "living room"
+              }
+            },
+            "llm_time_cost": 2.5751571655273438
+          },
+          "observation": {
+            "raw_content": "You move to the living room.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1185,
+            "output_tokens": 55
+          },
+          "round_time_cost": 2.5757155418395996
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 3,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "look",
+            "parsed_content": {
+              "tool_name": "look",
+              "inputs": {}
+            },
+            "llm_time_cost": 2.044966459274292
+          },
+          "observation": {
+            "raw_content": "This room is called the living room. In it, you see: \n\tthe agent\n\ta substance called air\n\ta chair. On the chair is: nothing.\n\ta couch. On the couch is: a white pillow.\n\ta finger painting\n\ta orange box (containing nothing)\n\ta table. On the table is: nothing.\n\tunknown substance B\n\ta yellow box (containing nothing)\nYou also see:\n\tA door to the hallway (that is open)",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1263,
+            "output_tokens": 56
+          },
+          "round_time_cost": 2.0459365844726562
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 4,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine unknown substance B",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "unknown substance b"
+              }
+            },
+            "llm_time_cost": 4.0468738079071045
+          },
+          "observation": {
+            "raw_content": "unknown substance B",
+            "parsed_content": {
+              "status": "success",
+              "examined_content": []
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1429,
+            "output_tokens": 84
+          },
+          "round_time_cost": 4.047867298126221
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 5,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine orange box",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "orange box"
+              }
+            },
+            "llm_time_cost": 3.2845611572265625
+          },
+          "observation": {
+            "raw_content": "a orange box (containing nothing)",
+            "parsed_content": {
+              "status": "success",
+              "examined_content": [
+                "orange"
+              ]
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1534,
+            "output_tokens": 85
+          },
+          "round_time_cost": 3.285529613494873
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 6,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine yellow box",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "yellow box"
+              }
+            },
+            "llm_time_cost": 1.9623603820800781
+          },
+          "observation": {
+            "raw_content": "a yellow box (containing nothing)",
+            "parsed_content": {
+              "status": "success",
+              "examined_content": [
+                "yellow"
+              ]
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1643,
+            "output_tokens": 39
+          },
+          "round_time_cost": 1.9633219242095947
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 7,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "look",
+            "parsed_content": {
+              "tool_name": "look",
+              "inputs": {}
+            },
+            "llm_time_cost": 3.4782559871673584
+          },
+          "observation": {
+            "raw_content": "This room is called the living room. In it, you see: \n\tthe agent\n\ta substance called air\n\ta chair. On the chair is: nothing.\n\ta couch. On the couch is: a white pillow.\n\ta finger painting\n\ta orange box (containing nothing)\n\ta table. On the table is: nothing.\n\tunknown substance B\n\ta yellow box (containing nothing)\nYou also see:\n\tA door to the hallway (that is open)",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1706,
+            "output_tokens": 129
+          },
+          "round_time_cost": 3.479282855987549
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 8,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine unknown substance B",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "unknown substance b"
+              }
+            },
+            "llm_time_cost": 4.171451807022095
+          },
+          "observation": {
+            "raw_content": "unknown substance B",
+            "parsed_content": {
+              "status": "success",
+              "examined_content": []
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 1945,
+            "output_tokens": 104
+          },
+          "round_time_cost": 4.1725075244903564
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 9,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "use unknown substance B",
+            "parsed_content": {
+              "tool_name": "use",
+              "inputs": {
+                "target": "unknown substance b"
+              }
+            },
+            "llm_time_cost": 9.459136247634888
+          },
+          "observation": {
+            "raw_content": "No known action matches that input.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2070,
+            "output_tokens": 251
+          },
+          "round_time_cost": 9.46030306816101
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 10,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to hallway",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "hallway"
+              }
+            },
+            "llm_time_cost": 3.642493963241577
+          },
+          "observation": {
+            "raw_content": "You move to the hallway.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2344,
+            "output_tokens": 108
+          },
+          "round_time_cost": 3.6433422565460205
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 11,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to workshop",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "workshop"
+              }
+            },
+            "llm_time_cost": 2.42868971824646
+          },
+          "observation": {
+            "raw_content": "You move to the workshop.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2474,
+            "output_tokens": 58
+          },
+          "round_time_cost": 2.4292566776275635
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 12,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "look",
+            "parsed_content": {
+              "tool_name": "look",
+              "inputs": {}
+            },
+            "llm_time_cost": 2.693186044692993
+          },
+          "observation": {
+            "raw_content": "This room is called the workshop. In it, you see: \n\tthe agent\n\ta substance called air\n\ta table. On the table is: a battery, a blue light bulb, which is off, a green light bulb, which is off, a green wire, a orange wire, a red wire, a switch, which is off, a violet light bulb, which is off.\n\ta ultra low temperature freezer. The ultra low temperature freezer door is closed. \nYou also see:\n\tA door to the hallway (that is open)",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2554,
+            "output_tokens": 57
+          },
+          "round_time_cost": 2.694249153137207
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 13,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "open ultra low temperature freezer",
+            "parsed_content": {
+              "tool_name": "open",
+              "inputs": {
+                "recep": "ultra low temperature freezer"
+              }
+            },
+            "llm_time_cost": 4.897108554840088
+          },
+          "observation": {
+            "raw_content": "The ultra low temperature freezer is now open.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2736,
+            "output_tokens": 90
+          },
+          "round_time_cost": 4.898230314254761
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 14,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine ultra low temperature freezer",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "ultra low temperature freezer"
+              }
+            },
+            "llm_time_cost": 2.2023141384124756
+          },
+          "observation": {
+            "raw_content": "a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.",
+            "parsed_content": {
+              "status": "success",
+              "examined_content": [
+                "ultra"
+              ]
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2851,
+            "output_tokens": 54
+          },
+          "round_time_cost": 2.203324794769287
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 15,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to living room",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "living room"
+              }
+            },
+            "llm_time_cost": 6.239818811416626
+          },
+          "observation": {
+            "raw_content": "No known action matches that input.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 2946,
+            "output_tokens": 229
+          },
+          "round_time_cost": 6.240998268127441
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 16,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go to living room",
+            "parsed_content": {
+              "tool_name": "go",
+              "inputs": {
+                "recep": "living room"
+              }
+            },
+            "llm_time_cost": 4.794552326202393
+          },
+          "observation": {
+            "raw_content": "No known action matches that input.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3198,
+            "output_tokens": 53
+          },
+          "round_time_cost": 4.795557498931885
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 17,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "check valid actions",
+            "parsed_content": {
+              "tool_name": "check",
+              "inputs": {}
+            },
+            "llm_time_cost": 3.111670732498169
+          },
+          "observation": {
+            "raw_content": "Choose an action from these valid actions: activate OBJ, close OBJ, deactivate OBJ, dunk OBJ in OBJ, eat OBJ, flush OBJ, focus on OBJ, go OBJ, inventory, look around, look at OBJ, look in OBJ, mix OBJ, move OBJ to OBJ, open OBJ, pick up OBJ, pour OBJ in OBJ, put down OBJ, read OBJ, task, use OBJ on OBJ, wait, wait1, check valid actions",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3274,
+            "output_tokens": 55
+          },
+          "round_time_cost": 3.11272931098938
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 18,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go living room",
+            "parsed_content": {
+              "tool_name": "unknown",
+              "inputs": {}
+            },
+            "llm_time_cost": 3.998019218444824
+          },
+          "observation": {
+            "raw_content": "No known action matches that input.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3437,
+            "output_tokens": 57
+          },
+          "round_time_cost": 3.999055862426758
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 19,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "look around",
+            "parsed_content": {
+              "tool_name": "unknown",
+              "inputs": {}
+            },
+            "llm_time_cost": 2.840965509414673
+          },
+          "observation": {
+            "raw_content": "This room is called the workshop. In it, you see: \n\tthe agent\n\ta substance called air\n\ta table. On the table is: a battery, a blue light bulb, which is off, a green light bulb, which is off, a green wire, a orange wire, a red wire, a switch, which is off, a violet light bulb, which is off.\n\ta ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.\nYou also see:\n\tA door to the hallway (that is open)",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3517,
+            "output_tokens": 57
+          },
+          "round_time_cost": 2.842052459716797
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 20,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "use door to hallway",
+            "parsed_content": {
+              "tool_name": "use",
+              "inputs": {
+                "target": "door to hallway"
+              }
+            },
+            "llm_time_cost": 4.0033464431762695
+          },
+          "observation": {
+            "raw_content": "No known action matches that input.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3708,
+            "output_tokens": 88
+          },
+          "round_time_cost": 4.004373073577881
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 21,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go door to the hallway",
+            "parsed_content": {
+              "tool_name": "unknown",
+              "inputs": {}
+            },
+            "llm_time_cost": 2.8009421825408936
+          },
+          "observation": {
+            "raw_content": "You move through the door to the hallway.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3819,
+            "output_tokens": 75
+          },
+          "round_time_cost": 2.8019158840179443
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 22,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go door to the living room",
+            "parsed_content": {
+              "tool_name": "unknown",
+              "inputs": {}
+            },
+            "llm_time_cost": 3.3909709453582764
+          },
+          "observation": {
+            "raw_content": "You move through the door to the living room.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3919,
+            "output_tokens": 53
+          },
+          "round_time_cost": 3.391855239868164
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 23,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "pick up unknown substance B",
+            "parsed_content": {
+              "tool_name": "unknown",
+              "inputs": {}
+            },
+            "llm_time_cost": 4.659700393676758
+          },
+          "observation": {
+            "raw_content": "You move the unknown substance B to the inventory.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 3998,
+            "output_tokens": 103
+          },
+          "round_time_cost": 4.660750865936279
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 24,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go door to the hallway",
+            "parsed_content": {
+              "tool_name": "unknown",
+              "inputs": {}
+            },
+            "llm_time_cost": 4.701864004135132
+          },
+          "observation": {
+            "raw_content": "You move through the door to the hallway.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4127,
+            "output_tokens": 107
+          },
+          "round_time_cost": 4.703041315078735
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 25,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go door to the workshop",
+            "parsed_content": {
+              "tool_name": "unknown",
+              "inputs": {}
+            },
+            "llm_time_cost": 3.5430197715759277
+          },
+          "observation": {
+            "raw_content": "You move through the door to the workshop.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4259,
+            "output_tokens": 51
+          },
+          "round_time_cost": 3.5439865589141846
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 26,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "examine ultra low temperature freezer",
+            "parsed_content": {
+              "tool_name": "examine",
+              "inputs": {
+                "target": "ultra low temperature freezer"
+              }
+            },
+            "llm_time_cost": 4.298081159591675
+          },
+          "observation": {
+            "raw_content": "a ultra low temperature freezer. The ultra low temperature freezer door is open. In the ultra low temperature freezer is: nothing.",
+            "parsed_content": {
+              "status": "success",
+              "examined_content": [
+                "ultra"
+              ]
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4335,
+            "output_tokens": 106
+          },
+          "round_time_cost": 4.299113035202026
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 27,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go door to the hallway",
+            "parsed_content": {
+              "tool_name": "unknown",
+              "inputs": {}
+            },
+            "llm_time_cost": 6.905951976776123
+          },
+          "observation": {
+            "raw_content": "You move through the door to the hallway.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4482,
+            "output_tokens": 182
+          },
+          "round_time_cost": 6.9070165157318115
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 28,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "go door to the living room",
+            "parsed_content": {
+              "tool_name": "unknown",
+              "inputs": {}
+            },
+            "llm_time_cost": 2.166245222091675
+          },
+          "observation": {
+            "raw_content": "You move through the door to the living room.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4689,
+            "output_tokens": 45
+          },
+          "round_time_cost": 2.1673567295074463
+        },
+        {
+          "type": "act_ob_pair",
+          "step_id": 29,
+          "param_filling_mode": null,
+          "action": {
+            "raw_content": "put unknown substance B in orange box",
+            "parsed_content": {
+              "tool_name": "put",
+              "inputs": {
+                "obj": "unknown substance b",
+                "recep": "orange box"
+              }
+            },
+            "llm_time_cost": 3.105976104736328
+          },
+          "observation": {
+            "raw_content": "You move the unknown substance B to the orange box.",
+            "parsed_content": {
+              "status": "success"
+            }
+          },
+          "token_consumption": {
+            "input_tokens": 4760,
+            "output_tokens": 95
+          },
+          "round_time_cost": 3.107043981552124
+        }
+      ],
+      "summary": "Trajectory finished."
+    }
+  ],
+  "overhead": {
+    "total_graph_search_time": 0.0,
+    "total_SimSCE_time": 0.0,
+    "total_intuition_embedding_time": 0.0,
+    "total_path_embedding_time": 0.0,
+    "total_similarity_cost_time": 0.0,
+    "total_graph_construction": 0.0,
+    "total_inertial_sense_overhead": 0.00017309188842773438,
+    "total_parser_time": 0.004988193511962891,
+    "total_updating_time": 0.0032982826232910156,
+    "total_param_filling_time": 0.0,
+    "total_generate_action_action_time": 0.0,
+    "total_llm_time": 112.48525667190552
+  },
+  "inertial_step": []
+}

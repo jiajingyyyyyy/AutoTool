@@ -156,11 +156,11 @@ Although we use API-based inference (not local models), the AgentBoard framework
 If you find AutoTool useful for your research, please cite our paper:
 
 ```bibtex
-@inproceedings{Jia2025AutoToolET,
+@article{jia2025autotool,
   title={AutoTool: Efficient Tool Selection for Large Language Model Agents},
-  author={Jingyi Jia and Qinbin Li},
-  year={2025},
-  url={https://api.semanticscholar.org/CorpusID:283081011}
+  author={Jia, Jingyi and Li, Qinbin},
+  journal={arXiv preprint arXiv:2511.14650},
+  year={2025}
 }
 ```
 

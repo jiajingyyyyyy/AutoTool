@@ -11,12 +11,9 @@ from collections import deque
 # --- 标准导入 ---
 from agents.base_agent import BaseAgent
 from common.registry import registry
-from agentboard.prompts.ReactBaselineAgent.sys_prompt.alfworld_sys_prompt import ALFWORLD_SYS_PROMPT
-from agentboard.prompts.ReactBaselineAgent.sys_prompt.tool_query_sys_prompt import TOOL_QUERY_SYSTEM_PROMPT, WEATHER_SYSTEM_PROMPT, MOVIE_SYSTEM_PROMPT
-from agentboard.prompts.ReactBaselineAgent.sys_prompt.tool_operation_sys_prompt import TODO_SYSTEM_PROMPT
-from agentboard.prompts.ReactBaselineAgent.jericho_sys_prompt import JERICHO_SYSTEM_PROMPT
-from agentboard.prompts.ReactBaselineAgent.sys_prompt.sheet_sys_prompt import SHEET_SYSTEM_PROMPT
-from agentboard.prompts.ReactBaselineAgent.sys_prompt.scienceworld_sys_prompt import SCIENCEWORLD_SYS_PROMPT
+from agentboard.prompts.ReactBaselineAgent.alfworld_sys_prompt import ALFWORLD_SYS_PROMPT
+from agentboard.prompts.ReactBaselineAgent.tool_query_sys_prompt import TOOL_QUERY_SYSTEM_PROMPT
+from agentboard.prompts.ReactBaselineAgent.scienceworld_sys_prompt import SCIENCEWORLD_SYS_PROMPT
 
 # --- AutoTool / Memory 导入 (带回退逻辑) ---
 

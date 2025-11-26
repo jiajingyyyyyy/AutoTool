@@ -1,0 +1,383 @@
+llm_config: {'name': 'gpt', 'engine': 'DeepSeekV3', 'context_length': 1000000, 'use_azure': False, 'temperature': 0.0, 'top_p': 1, 'retry_delays': 20, 'max_retry_iters': 15, 'stop': '\n', 'use_parser': True}
+[debug] log_history: {}
+evaluating task: alfworld
+Loading initialization prompt from file: /data/agentboard/prompts/ReactInertiaAgent/alfworld_react.json
+Prompt loaded successfully.
+Initial inertial module...
+Build log file: /data/agentboard/examples/alfworld_quickstart/trajectories
+Build log file: /data/agentboard/examples/alfworld_quickstart/trajectories/alfworld_inertia_0.2_0.5_20251126_214924.json
+Tool description is: /data/autool/core/tool_predict/tool_doc/alfworld_tool_description.json
+Loading 14 tools
+Loaded 14 tools
+Starting from empty trajectory
+Tool Graph loaded from /data/autool/core/tool_predict/tool_doc/alfworld_tool_description.json and /data/agentboard/examples/alfworld_quickstart/trajectories/alfworld_inertia_0.2_0.5_20251126_214924.json
+{
+  "nodes": {
+    "take": {
+      "name": "take",
+      "description": "Pick up a specific object from a receptacle or location.",
+      "input_params": {
+        "obj": {
+          "type": "str",
+          "description": "The object you want to take"
+        },
+        "recep": {
+          "type": "str",
+          "description": "The receptacle or location where the object is currently located"
+        }
+      }
+    },
+    "put": {
+      "name": "put",
+      "description": "Place an object you're currently holding into or onto a receptacle.",
+      "input_params": {
+        "obj": {
+          "type": "str",
+          "description": "The object you want to put down (must be in your inventory)"
+        },
+        "recep": {
+          "type": "str",
+          "description": "The receptacle or location where you want to place the object"
+        }
+      }
+    },
+    "open": {
+      "name": "open",
+      "description": "Open a closed container or receptacle to access its contents.",
+      "input_params": {
+        "recep": {
+          "type": "str",
+          "description": "The container or receptacle you want to open"
+        }
+      }
+    },
+    "close": {
+      "name": "close",
+      "description": "Close an open container or receptacle.",
+      "input_params": {
+        "recep": {
+          "type": "str",
+          "description": "The container or receptacle you want to close"
+        }
+      }
+    },
+    "toggle": {
+      "name": "toggle",
+      "description": "Toggle the state of an object or device (turn on/off).",
+      "input_params": {
+        "target": {
+          "type": "str",
+          "description": "The object or receptacle whose state you want to toggle"
+        }
+      }
+    },
+    "clean": {
+      "name": "clean",
+      "description": "Clean an object using a specific cleaning tool or receptacle.",
+      "input_params": {
+        "obj": {
+          "type": "str",
+          "description": "The object you want to clean"
+        },
+        "recep": {
+          "type": "str",
+          "description": "The tool or receptacle you want to use for cleaning"
+        }
+      }
+    },
+    "cool": {
+      "name": "cool",
+      "description": "Cool an object using a cooling device or receptacle.",
+      "input_params": {
+        "obj": {
+          "type": "str",
+          "description": "The object you want to cool"
+        },
+        "recep": {
+          "type": "str",
+          "description": "The cooling device or receptacle to use"
+        }
+      }
+    },
+    "heat": {
+      "name": "heat",
+      "description": "Heat an object using a heating device or receptacle.",
+      "input_params": {
+        "obj": {
+          "type": "str",
+          "description": "The object you want to heat"
+        },
+        "recep": {
+          "type": "str",
+          "description": "The heating device or receptacle to use"
+        }
+      }
+    },
+    "inventory": {
+      "name": "inventory",
+      "description": "Check what objects you are currently carrying.",
+      "input_params": {}
+    },
+    "examine": {
+      "name": "examine",
+      "description": "Closely examine an object or receptacle to get more detailed information about it.",
+      "input_params": {
+        "target": {
+          "type": "str",
+          "description": "The object or receptacle you want to examine"
+        }
+      }
+    },
+    "go": {
+      "name": "go",
+      "description": "Move to a specific location or receptacle in the environment.",
+      "input_params": {
+        "recep": {
+          "type": "str",
+          "description": "The location or receptacle you want to go to"
+        },
+        "through": {
+          "type": "str",
+          "description": "Optional intermediate location to pass through"
+        }
+      }
+    },
+    "check": {
+      "name": "check",
+      "description": "Check what actions are currently valid in your current state and location.",
+      "input_params": {
+        "valid_actions": {
+          "type": "str",
+          "description": "Should be set to 'valid actions' to check available actions"
+        }
+      }
+    },
+    "look": {
+      "name": "look",
+      "description": "Look around to observe your current surroundings and the objects in the environment.",
+      "input_params": {}
+    },
+    "use": {
+      "name": "use",
+      "description": "Use or interact with a specific object or device.",
+      "input_params": {
+        "target": {
+          "type": "str",
+          "description": "The object or receptacle you want to use"
+        }
+      }
+    }
+  },
+  "edges": [],
+  "paths": []
+}
+Successfully loaded parameter dependency graph from /data/agentboard/examples/alfworld_quickstart/trajectories/alfworld_inertia_0.2_0.5_20251126_214924.json
+Dependency graph stats: {'source_tools_count': 0, 'target_tools_count': 0, 'total_dependencies': 0, 'total_counts': 0, 'unique_tools': 0}
+惯性组件初始化成功。
+load agent done, the agent is ReactInertiaAgent
+load task done
+Available environments: ['academia', 'alfworld', 'scienceworld']
+Requested environment: alfworld
+****************************************************************************************************
+/data/agentboard/environment/alfworld/base_config.yaml
+****************************************************************************************************
+Initializing AlfredTWEnv...
+Checking for solvable games...
+Overall we have 134 games
+Evaluating with 134 games
+start reset agent
+正在重置惯性状态...
+惯性状态已重置。
+agent reset done
+start run agent
+ /// DEBUG: LLM Input ///
+System Prompt (start): You are an intelligent assistant working according to the ReAct (Reasoning + Acting) paradigm
+            Your MAIN GOAL is: **look at bowl under the desklamp.**
+            You MUST achieve ALL aspec...
+--- History (Last 2 messages) ---
+- system: You are an intelligent assistant working according to the ReAct (Reasoning + Acting) paradigm
+            Your MAIN GOAL is: **look at bowl under the desklamp.**
+            You MUST achieve ALL aspec...
+- user: <Observation>You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a...
+ /// DEBUG END /// 
+debug info: prompt_tokens: 788, completion_tokens: 100
+[debug after llm call]: {'input_tokens': 788, 'output_tokens': 100}
+llm call time cost: 3.20s
+ /// DEBUG: LLM Raw Response ///
+Think: My goal is to look at the bowl under the desklamp. First, I need to locate the desklamp. Since a desklamp is typically on a desk, I should go to one of the desks (desk 1 or desk 2) and examine the area to find the desklamp and the bowl underneath it. I will start by going to desk 1, as it is likely to have the desklamp.  
+Action: go to desk 1
+ /// DEBUG END /// 
+===============   Action   ===============
+Action: go to desk 1
+success: True, action: go to desk 1
+run agent done
+Debug: Parsing action: go to desk 1
+Step 01 - llm_time_cost: 3.20s, round_cost: 3.20s
+Current inertia window: deque(['go'], maxlen=4)
+Warning: 发现工具LLM调用成功，加入正权边 deque(['go'], maxlen=4)
+Warning: Tool sequence too short to record
+--- End Recording Execution ---
+为惯性跟踪记录的动作: go to desk 1
+******************** Inertail appended time cost display ********************
+total_updating_time cost: 0.00s
+total_graph_search_time cost: 0.00s
+total_SimSCE_time cost: 0.00s
+total_intuition_embedding_time cost: 0.00s
+total_path_embedding_time cost: 0.00s
+total_similarity_cost_time cost: 0.00s
+total_graph_construction_time cost: 0.00s
+total_inertial_sense_overhead cost: 0.00s
+total_param_filling_time cost: 0.00s
+total_generate_action_time cost: 0.00s
+total_parser_time cost: 0.00s
+total_llm_time cost: 3.20s
+******************** Inertail appended time cost display ********************
+start run agent
+ /// DEBUG: LLM Input ///
+System Prompt (start): You are an intelligent assistant working according to the ReAct (Reasoning + Acting) paradigm
+            Your MAIN GOAL is: **look at bowl under the desklamp.**
+            You MUST achieve ALL aspec...
+--- History (Last 2 messages) ---
+- assistant: Think: My goal is to look at the bowl under the desklamp. First, I need to locate the desklamp. Since a desklamp is typically on a desk, I should go to one of the desks (desk 1 or desk 2) and examine ...
+- user: <Observation>On the desk 1, you see a desklamp 1, a keychain 3, a mug 2, a pen 2, a pen 1, and a pencil 2.</Observation>
+
+...
+ /// DEBUG END /// 
+debug info: prompt_tokens: 947, completion_tokens: 110
+[debug after llm call]: {'input_tokens': 947, 'output_tokens': 110}
+llm call time cost: 4.52s
+ /// DEBUG: LLM Raw Response ///
+Think: I have found desklamp 1 on desk 1. The bowl is supposed to be under the desklamp, so I need to examine the area under it. Since the desklamp might be blocking the view, I may need to toggle it (turn it off or adjust it) to see underneath, or directly examine the space beneath it. The best next step is to examine desklamp 1 to get more information about its state and whether the bowl is visible underneath.  
+Action: examine desklamp 1
+ /// DEBUG END /// 
+===============   Action   ===============
+Action: examine desklamp 1
+success: True, action: examine desklamp 1
+run agent done
+Debug: Parsing action: examine desklamp 1
+Warning: Action 'examine desklamp 1' may be invalid based on observation
+Step 02 - llm_time_cost: 4.52s, round_cost: 4.52s
+Current inertia window: deque(['go', 'examine'], maxlen=4)
+Warning: 发现工具LLM调用失败，加入负权边 deque(['go', 'examine'], maxlen=4)
+Warning: Tool sequence too short to record
+--- End Recording Execution ---
+为惯性跟踪记录的动作: examine desklamp 1
+******************** Inertail appended time cost display ********************
+total_updating_time cost: 0.00s
+total_graph_search_time cost: 0.00s
+total_SimSCE_time cost: 0.00s
+total_intuition_embedding_time cost: 0.00s
+total_path_embedding_time cost: 0.00s
+total_similarity_cost_time cost: 0.00s
+total_graph_construction_time cost: 0.00s
+total_inertial_sense_overhead cost: 0.00s
+total_param_filling_time cost: 0.00s
+total_generate_action_time cost: 0.00s
+total_parser_time cost: 0.00s
+total_llm_time cost: 7.72s
+******************** Inertail appended time cost display ********************
+start run agent
+ /// DEBUG: LLM Input ///
+System Prompt (start): You are an intelligent assistant working according to the ReAct (Reasoning + Acting) paradigm
+            Your MAIN GOAL is: **look at bowl under the desklamp.**
+            You MUST achieve ALL aspec...
+--- History (Last 2 messages) ---
+- assistant: Think: I have found desklamp 1 on desk 1. The bowl is supposed to be under the desklamp, so I need to examine the area under it. Since the desklamp might be blocking the view, I may need to toggle it ...
+- user: <Observation>Nothing happens.</Observation>
+
+...
+ /// DEBUG END /// 
+debug info: prompt_tokens: 1077, completion_tokens: 84
+[debug after llm call]: {'input_tokens': 1077, 'output_tokens': 84}
+llm call time cost: 4.76s
+ /// DEBUG: LLM Raw Response ///
+Think: Examining desklamp 1 directly did not provide information about what is under it. To see underneath, I likely need to toggle the desklamp (turn it on or off), as this might change its position or allow me to see beneath it. I will try toggling desklamp 1 to alter its state and then examine the area underneath.  
+Action: toggle desklamp 1
+ /// DEBUG END /// 
+===============   Action   ===============
+Action: toggle desklamp 1
+success: True, action: toggle desklamp 1
+run agent done
+Debug: Parsing action: toggle desklamp 1
+Warning: Action 'toggle desklamp 1' may be invalid based on observation
+Step 03 - llm_time_cost: 4.76s, round_cost: 4.76s
+Current inertia window: deque(['go', 'examine', 'toggle'], maxlen=4)
+Warning: 发现工具LLM调用失败，加入负权边 deque(['go', 'examine', 'toggle'], maxlen=4)
+[ToolGraph] Recorded edges for sequence: deque(['go', 'examine', 'toggle'], maxlen=4)
+--- End Recording Execution ---
+为惯性跟踪记录的动作: toggle desklamp 1
+******************** Inertail appended time cost display ********************
+total_updating_time cost: 0.00s
+total_graph_search_time cost: 0.00s
+total_SimSCE_time cost: 0.00s
+total_intuition_embedding_time cost: 0.00s
+total_path_embedding_time cost: 0.00s
+total_similarity_cost_time cost: 0.00s
+total_graph_construction_time cost: 0.00s
+total_inertial_sense_overhead cost: 0.00s
+total_param_filling_time cost: 0.00s
+total_generate_action_time cost: 0.00s
+total_parser_time cost: 0.00s
+total_llm_time cost: 12.48s
+******************** Inertail appended time cost display ********************
+start run agent
+--- 发现 ' 连续两次 Invalid action'，尝试调用 'check valid actions' ---
+success: True, action: check valid actions
+run agent done
+Debug: Parsing action: check valid actions
+Step 04 - llm_time_cost: 0.00s, round_cost: 0.00s
+Current inertia window: deque(['go', 'examine', 'toggle', 'check'], maxlen=4)
+Warning: 发现工具惯性调用成功，加入正权边 deque(['go', 'examine', 'toggle', 'check'], maxlen=4)
+[ToolGraph] Recorded edges for sequence: deque(['go', 'examine', 'toggle', 'check'], maxlen=4)
+--- End Recording Execution ---
+为惯性跟踪记录的动作: check valid actions
+******************** Inertail appended time cost display ********************
+total_updating_time cost: 0.00s
+total_graph_search_time cost: 0.00s
+total_SimSCE_time cost: 0.00s
+total_intuition_embedding_time cost: 0.00s
+total_path_embedding_time cost: 0.00s
+total_similarity_cost_time cost: 0.00s
+total_graph_construction_time cost: 0.00s
+total_inertial_sense_overhead cost: 0.00s
+total_param_filling_time cost: 0.00s
+total_generate_action_time cost: 0.00s
+total_parser_time cost: 0.00s
+total_llm_time cost: 12.48s
+******************** Inertail appended time cost display ********************
+start run agent
+--- 惯性检查: 最近 2 条历史记录: [{'tool_name': 'toggle', 'inputs': {'target': 'desklamp 1'}, 'outputs': {'status': 'failure'}, 'raw_action': 'toggle desklamp 1', 'raw_result': 'Nothing happens.'}, {'tool_name': 'check', 'inputs': {}, 'outputs': {'status': 'success'}, 'raw_action': 'check valid actions', 'raw_result': 'Choose an action from these valid actions: examine desk 1, go to bed 1, go to desk 2, go to drawer 1, go to drawer 2, go to drawer 3, go to drawer 4, go to drawer 5, go to drawer 6, go to garbagecan 1, go to laundryhamper 1, go to safe 1, go to shelf 1, go to shelf 2, go to shelf 3, go to shelf 4, go to shelf 5, go to shelf 6, inventory, look, take keychain 3 from desk 1, take mug 2 from desk 1, take pen 1 from desk 1, take pen 2 from desk 1, take pencil 2 from desk 1, use desklamp 1, check valid actions'}] ---
+--- 惯性检查: 当前历史 (最近 2 步): ['toggle', 'check'] ---
+[DEBUG]: Starting graph prediction...
+[DEBUG] current_sequence type: <class 'list'>, value: ['toggle', 'check']
+[DEBUG] Getting potential path indices for sequence: ['toggle', 'check']
+[DEBUG] First tool: toggle, type: <class 'str'>
+[DEBUG] path_index keys (first 5): ['take', 'put', 'open', 'close', 'toggle']
+[DEBUG] Found 2 potential paths for 'toggle'
+[DEBUG] Checking tool at index 1: check
+[DEBUG] After intersecting 'check': 1 paths remain
+[DEBUG] Final potential_path_indices: {1}
+[DEBUG] Processing 1 paths: {1}
+ [DEBUG] Checking path.tools...
+    path_idx: 1, type: <class 'list'>, value: ['go', 'examine', 'toggle', 'check']
+   path.tools: ['go', 'examine', 'toggle', 'check']
+[DEBUG] Path 1: is_subseq=True, start_pos=2, path.tools=['go', 'examine', 'toggle', 'check']
+加载模型: /data/model_download/models--princeton-nlp--sup-simcse-roberta-base/snapshots/4bf73c6b5df517f74188c5e9ec159b2208c89c08
+分词器已加载: /data/model_download/models--princeton-nlp--sup-simcse-roberta-base/snapshots/4bf73c6b5df517f74188c5e9ec159b2208c89c08
+模型已加载: /data/model_download/models--princeton-nlp--sup-simcse-roberta-base/snapshots/4bf73c6b5df517f74188c5e9ec159b2208c89c08
+✅ Model loaded successfully
+模型已加载到设备: cpu
+Loaded 26 cached embeddings
+No matching paths found
+--- 惯性检查: 未预测到动作类型。将继续执行 ReAct。---
+ /// DEBUG: LLM Input ///
+System Prompt (start): You are an intelligent assistant working according to the ReAct (Reasoning + Acting) paradigm
+            Your MAIN GOAL is: **look at bowl under the desklamp.**
+            You MUST achieve ALL aspec...
+--- History (Last 2 messages) ---
+- assistant: Think: Detected 'Nothing happens' pattern. Applying action 'check valid actions' to recover.
+Action: check valid actions...
+- user: <Observation>Choose an action from these valid actions: examine desk 1, go to bed 1, go to desk 2, go to drawer 1, go to drawer 2, go to drawer 3, go to drawer 4, go to drawer 5, go to drawer 6, go to...
+ /// DEBUG END /// 
+Attempting to save embedding cache on exit...
+Saved 27 embeddings to cache

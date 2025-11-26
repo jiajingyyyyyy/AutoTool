@@ -142,8 +142,8 @@ Run the evaluation script (e.g., for AlfWorld):
 python agentboard/eval_main.py \
     --cfg-path eval_configs/main_results_all_tasks.yaml \
     --tasks alfworld \
-    --model qwen \
-    --log_path ./results/scienceworld_test_param \
+    --model DeepSeekV3 \
+    --log_path ./results/alfworld_quick_start \
     --project_name evaluate_reflection \
     --baseline_dir ./data/baseline_results
 ```
